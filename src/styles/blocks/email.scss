@@ -128,9 +128,7 @@
     }
   }
 
-  &__facebook,
-  &__instagram,
-  &__twitter {
+  &__facebook {
     cursor: pointer;
 
     display: block;
@@ -138,6 +136,7 @@
     width: 18px;
     height: 18px;
 
+    background-image: url('../icons/email--face.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -147,16 +146,40 @@
     }
   }
 
-  &__facebook {
-    background-image: url('../icons/email--face.svg');
-  }
-
   &__instagram {
+    cursor: pointer;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
     background-image: url('../icons/email--insta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &:hover {
+      @include transision;
+    }
   }
 
   &__twitter {
+    cursor: pointer;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
     background-image: url('../icons/email--twit.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    &:hover {
+      @include transision;
+    }
   }
 }
 
