@@ -308,6 +308,8 @@ textarea {
 
 input,
 textarea {
+  resize: none;
+  overflow: auto;
   background: none; /* прибирає фон */
 }
 

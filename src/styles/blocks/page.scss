@@ -43,3 +43,15 @@ html {
     }
   }
 }
+
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  height: 100%; /* іноді потрібно */
+}
+
+body.no-scroll {
+  position: relative; /* щоб уникнути зсувів */
+  overflow: hidden;
+  height: 100vh; /* щоб не було прокрутки */
+}
